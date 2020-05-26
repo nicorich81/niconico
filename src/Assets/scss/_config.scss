@@ -1,0 +1,29 @@
+$lightBlue: #4ccbee;
+$darkBlue: #086e8a;
+$modalBg : rgba(0, 0, 0, 0.7);
+
+//font size
+$customH1:20px;
+$customText:12px;
+$customX-large:18px;
+$customLarge:14px;
+
+//media query
+$breakpoint-tablet: 768px;
+@media (min-width: $breakpoint-tablet) {
+  $customX-large:24px;
+  $customLarge:18px;
+  $customH1:32px;
+  $customText:16px
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+@mixin transition($e) {
+  -webkit-transition: $e;
+  -moz-transition: $e;
+  transition: $e;
+}

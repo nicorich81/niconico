@@ -1,0 +1,62 @@
+@import "_config.scss";
+
+body {
+  font-family: "Bree Serif", serif;
+  font-size: 18px;
+  color: black;
+  font-weight: 400;
+  font-style: normal;
+}
+.bgHome {
+  background-image: url("../../home_background.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+
+  width: 100%;
+  height: 85vh;
+  @media (min-width: $breakpoint-tablet) {
+    height: 70vh;
+  }
+}
+
+.homeContent {
+  vertical-align: bottom;
+  display: inline-block;
+  width: 100%;
+  height: 85vh;
+  font-size: $customH1;
+
+  @media (min-width: $breakpoint-tablet) {
+    height: 70vh;
+  }
+  text-shadow: 0 0 4px grey;
+
+  .homeIntro{
+    text-align: center;
+    padding-right: 15vw;
+    padding-left: 15vw;
+
+  }
+  .homeQuote {
+    padding: 0;
+    height: 20vh;
+    width: 75%;
+    display: flex;
+    margin-top: 5vh;
+    font-style: italic;
+    font-size: $customText;
+    align-items: center;
+    text-shadow: 0 0 0 grey;
+    
+    
+    @media (min-width: $breakpoint-tablet) { 
+      height: 50vh;
+    }
+
+    img {
+      max-width: 60%;
+      height: auto;
+    }
+  }
+
+}
