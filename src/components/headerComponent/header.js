@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
-import HomePage from '../content/homePage';
+import HomePage from '../bodyComponent/homePage';
+import AboutPage from '../bodyComponent/aboutPage';
+import PricingPage from '../bodyComponent/pricingPage';
+import ContactPage from '../bodyComponent/contactPage';
 
 class Header extends Component {
     constructor(props) {
@@ -27,7 +30,7 @@ class Header extends Component {
 
                     <div className="logo">
                         <img src="/image/undraw_elements_cipa.svg" alt="BROKEN" />
-                        HOME
+                        <a href="#menuHome">HOME</a>
                     </div>
 
                     <nav className="menu">
@@ -60,8 +63,10 @@ class Header extends Component {
                 </div>}
 
                 <body>
-                <HomePage id="menuHome"></HomePage>
-
+                <HomePage></HomePage>
+                <AboutPage></AboutPage>
+                <PricingPage></PricingPage>
+                <ContactPage></ContactPage>
                 </body>
             </React.Fragment>
         );

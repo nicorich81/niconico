@@ -14,7 +14,7 @@ class HomePage extends Component {
     const {quote,introduction}=this.state;
     return (
 
-      <div className="App" >
+      <div id="menuHome" className="App" >
         <div className="bgHome">
 
           <div className="homeContent">

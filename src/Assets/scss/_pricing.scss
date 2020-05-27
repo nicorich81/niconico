@@ -1,0 +1,133 @@
+@import "_config.scss";
+
+.bgPricing {
+    padding-top: 15vh;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    border-bottom: 5px solid darkblue;
+    box-shadow: 0 5px 0 $lightBlue;
+    @media (min-width: $breakpoint-tablet) {
+        padding-top: 22vh;
+    }
+
+    .pricingContent {
+        vertical-align: bottom;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        font-size: $customH1;
+
+        @media (min-width: $breakpoint-tablet) {
+            min-height: 100vh;
+        }
+
+        .pricingTitle {
+            text-align: center;
+            text-shadow: 0 0 4px grey;
+        }
+
+        .pricingDesc {
+            text-indent: 50px;
+            padding: 5px 15px;
+        }
+
+        /* Float four columns side by side */
+        .column {
+            float: left;
+            width: 33.3%;
+            padding: 0px 10px;
+        }
+
+        /* Remove extra left and right margins, due to padding */
+        .row {
+            margin: 0 0;
+            min-height: 100vh;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Style the counter cards */
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            padding: 16px;
+            text-align: center;
+            background-color: #f1f1f1;
+            height: 400px;
+
+            .cardImg {
+                height: 30%;
+                width: 25%;
+            }
+
+            .cardText {
+                text-align: left;
+                border-bottom: 2px solid darkblue;
+                height: 45%;
+                h3 {
+                    text-align: center;
+                    font-weight: bold;
+                    color: darkblue;
+                }
+                ul {
+                    list-style: none;
+                    font-size: $customX-large;
+                    padding-inline-start: 10px;
+                    li::before {
+                        content: "\2713";
+                        color: green;
+                    }
+                }
+            }
+
+            .tierPrice {
+                display: block;
+                color: $darkBlue;
+            }
+            .loginButton {
+                color: #494949;
+                font-family: monospace;
+                font-weight: bold;
+                text-transform: uppercase;
+                text-decoration: none;
+                background: white;
+                padding: 2px;
+                border: 4px solid darkblue;
+                display: inline-block;
+                transition: all 0.4s ease 0s;
+                width: 100px;
+                height: 40px;
+            }
+
+            .loginButton:hover {
+                font-family: monospace;
+                color: white;
+                background: darkblue;
+                border-color: darkblue;
+                transition: all 0.4s ease 0s;
+            }
+        }
+
+        /* Responsive columns smaller */
+        @media screen and (max-width: 768px) {
+            .column {
+                width: 100%;
+                display: block;
+                margin-bottom: 20px;
+            }
+
+            .card {
+                height: auto;
+            }
+            .cardImg {
+                height: 10%;
+                width: 50%;
+            }
+        }
+    }
+}

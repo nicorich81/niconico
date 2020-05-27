@@ -3,10 +3,11 @@
 header {
   display: flex;
   justify-content: space-between;
-  position: relative;
+  position: fixed;
   width: 100%;
-  height: 15vh;
-  background: linear-gradient(to bottom, lightblue, white);
+  height: 12vh;
+  background: #3b5998;
+  // linear-gradient(to bottom, blue, white);
   color: white;
   //$customX-large : defined on _config.scss
   font-size: $customX-large;
@@ -17,7 +18,7 @@ header {
   padding-right: 2%;
 
   @media (min-width: $breakpoint-tablet) {
-    height: 30vh;
+    height: 20vh;
   }
 
   button {
@@ -28,12 +29,30 @@ header {
     height: 100px;
     width: 100px;
     display: flex;
-    text-shadow: 0 0 4px grey;
+    
+    
     padding-top: 10px;
     
+    a {
+      @include transition(0.6s ease-in-out);
+      cursor: pointer;
+      text-decoration: none;
+      color: white;
+
+      &:hover {
+        @include transition(0.6s ease-in-out);
+        text-shadow: 0 0 4px white;
+        color: darkblue;
+      }
+
+    }
     img {
       max-width: 100%;
-      height: auto;
+      height: 5vh;
+
+      @media (min-width: $breakpoint-tablet) {
+        height: 10vh;
+      }
     }
   }
 
@@ -45,7 +64,7 @@ header {
 
       a,
       button {
-        color: black;
+        color: white;
         margin-left: 2vw;
       }
 
@@ -57,7 +76,9 @@ header {
         &:hover {
           @include transition(0.6s ease-in-out);
           color: darkblue;
+          text-shadow: 0 0 4px white;
         }
+
       }
 
       button {

@@ -17,9 +17,22 @@ $breakpoint-tablet: 768px;
   $customText:16px
 }
 
+.companyName{
+  color: darkblue;
+  font-style: italic;
+}
+
 
 html{
     scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Bree Serif", serif;
+  font-size: 18px;
+  color: black;
+  font-weight: 400;
+  font-style: normal;
 }
 
 @mixin transition($e) {
