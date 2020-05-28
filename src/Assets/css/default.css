@@ -525,28 +525,37 @@ body {
 }
 
 .bgContact {
-  background-image: url("../../home_background.png");
-  background-repeat: no-repeat;
+  background: url("../../contact_us.svg");
+  background-color: rgba(76, 203, 238, 0.3);
   background-position: right bottom;
-  padding-top: 15vh;
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
-  min-height: 100vh;
+  height: 75vh;
+  padding-top: 5vh;
+  margin: 2vh 0 0;
 }
 @media (min-width: 768px) {
   .bgContact {
-    padding-top: 22vh;
+    padding: 22vh 10vh 10vh 10vh;
+    height: 100vh;
+    margin-top: 2vh;
   }
 }
 .bgContact .contactContent {
-  vertical-align: bottom;
-  width: 100%;
-  min-height: 85vh;
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 90%;
+  min-height: 70vh;
   font-size: 20px;
   text-shadow: 0 0 4px grey;
+  color: darkblue;
+  margin-top: 1vh;
+  padding: 1vh 2vh 1vh;
+  text-align: center;
 }
 @media (min-width: 768px) {
   .bgContact .contactContent {
-    height: 70vh;
+    padding: 2vh 5vh 5vh;
   }
 }
 .bgContact .contactContent .contactIntro {
@@ -555,14 +564,12 @@ body {
   padding-left: 15vw;
 }
 .bgContact .contactContent .contactQuote {
-  padding: 0;
   height: 20vh;
   width: 75%;
-  display: flex;
+  display: block;
   margin-top: 5vh;
-  font-style: italic;
   font-size: 12px;
-  align-items: center;
+  text-align: center;
   text-shadow: 0 0 0 grey;
 }
 @media (min-width: 768px) {
@@ -570,9 +577,49 @@ body {
     height: 50vh;
   }
 }
-.bgContact .contactContent .contactQuote img {
-  max-width: 60%;
-  height: auto;
+.bgContact .contactContent .contactQuote .border {
+  width: 100px;
+  height: 10px;
+  background: #34495e;
+  margin: 40px auto;
+}
+.bgContact .contactContent .contactQuote .contact-form {
+  max-width: 600px;
+  margin: auto;
+  padding: 0 10px;
+  overflow: hidden;
+}
+.bgContact .contactContent .contactQuote .contact-form-text {
+  display: block;
+  width: 100%;
+  height: 20px;
+  box-sizing: border-box;
+  margin: 16px 0;
+  border: 0;
+  background: #111;
+  padding: 20px 40px;
+  outline: none;
+  color: #ddd;
+  transition: 0.5s;
+}
+.bgContact .contactContent .contactQuote .contact-form-text:focus {
+  box-shadow: 0 0 10px 4px #34495e;
+}
+.bgContact .contactContent .contactQuote textarea.contact-form-text {
+  resize: none;
+  height: 40px;
+}
+.bgContact .contactContent .contactQuote .contact-form-btn {
+  border: 0;
+  background: #34495e;
+  color: #fff;
+  padding: 12px 50px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.bgContact .contactContent .contactQuote .contact-form-btn:hover {
+  background: #2980b9;
 }
 
 /*# sourceMappingURL=default.css.map */

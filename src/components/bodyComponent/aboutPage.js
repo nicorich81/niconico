@@ -5,7 +5,7 @@ class AboutPage extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      windowWidth: 0,
+      windowWidth:1366,
       quote: " adalah perusahaan software di Jakarta, Indonesia yang bergerak dalam bidang pencatatan transaksi serta keuntungan dan analisis data berdasarkan AI.",
       introduction: "OUR PROFILE"
     };
@@ -43,7 +43,7 @@ class AboutPage extends Component {
             <div className="aboutQuote">
               <img src="/image/about.svg" alt="BROKEN" />
               <div className="quote">
-                <p className="quote1"><b className="companyName"><font>Profity</font></b>{quote}</p>
+                <p className="quote1"><b className="companyName">Profity</b>{quote}</p>
 
                 {windowWidth >= 768 &&
                   <p className="quote2">

@@ -5,9 +5,8 @@ class HomePage extends Component {
   constructor(props) {
     super(props);
     this.state = {
-        quote:JSON.stringify( "WE ENSURE SOUND DESIGN AND LEGAL COMPLIANCE THROUGHOUT A BUILDING'S LIFESPAN, FROM CRADLE TO GRAVE"),
-        introduction:"WE ARE THE DIEHL GROUP ARCHITECTS, A FULL-SERVICE DESIGN AND CONSULTING FIRM SPECIALIZING IN FORENSIC ARCHITECTURE, QUALITY ASSURANCE, AND EXPERT WITNESS TESTIMONY."
-    };
+        quote:JSON.stringify( "We ensure data security and proven analytic result throughout our service, from Start to End"),
+        introduction:"GROUP, A FULL-SERVICE TRANSACTION DATA TRACKER AND DATA ANALYTIC TO IMPROVE BUSINESS' PROFIT WITH A SECURE, ACCURATE AND TRUSTED SERVICE."};
 }
 
   render() {
@@ -19,7 +18,7 @@ class HomePage extends Component {
 
           <div className="homeContent">
             <div className="homeIntro">
-              {introduction}
+            WE ARE <b className="companyName">Profity</b> {introduction}
             </div>
             <div className="homeQuote">
               <img src="/image/undraw_metrics_gtu7.svg" alt="BROKEN" />
